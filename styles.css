@@ -1,0 +1,9 @@
+.grid-pixel {
+    width: 10px;
+    height: 10px;
+}
+
+/* Moves this to JS*/
+.grid-row {
+    display: flex;
+}
