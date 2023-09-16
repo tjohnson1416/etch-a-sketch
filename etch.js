@@ -15,9 +15,14 @@ function makeGrid() {
         }
     }
     const pixels = document.querySelectorAll('.grid-pixel').forEach( (pixel) => {
-        pixel.style.height = '100px';
-        pixel.style.width = '100px';
-        pixel.style.backgroundColor = 'red';
+        pixel.style.height = '50px';
+        pixel.style.width = '50px';
     })
 };
 
+const pixels = document.querySelectorAll('.grid-pixel').forEach( (pixel) => {
+    pixel.addEventListener('mouseover', (x) => {
+        pixel.style.backgroundColor = 'black';
+        console.log('hover detected');
+    })
+})

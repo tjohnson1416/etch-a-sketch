@@ -1,8 +1,20 @@
-.grid-pixel {
-    width: 10px;
-    height: 10px;
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 1000px;
 }
 
 .grid-row {
     display: flex;
 }
+
+.pixel-black {
+    background-color: black;
+}
+
