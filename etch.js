@@ -1,6 +1,8 @@
-window.addEventListener('load', makeGrid());
+/*window.addEventListener('load', makeGrid());*/
 
+makeGrid();
 function makeGrid() {
+    console.log('working 1232123123')
     const gridContainer = document.querySelector('#grid-container');
     for (let i = 0; i < 16; i++){ /*Make 16 rows*/
         const gridRow = document.createElement('div');
@@ -12,9 +14,10 @@ function makeGrid() {
             gridRow.appendChild(gridPixel);
         }
     }
-    const pixels = document.querySelectorAll('grid-pixel').forEach( (pixel) => {
+    const pixels = document.querySelectorAll('.grid-pixel').forEach( (pixel) => {
         pixel.style.height = '100px';
-        pixel.style.widtht = '100px';
+        pixel.style.width = '100px';
+        pixel.style.backgroundColor = 'red';
     })
 };
 
