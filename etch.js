@@ -12,4 +12,9 @@ function makeGrid() {
             gridRow.appendChild(gridPixel);
         }
     }
+    const pixels = document.querySelectorAll('grid-pixel').forEach( (pixel) => {
+        pixel.style.height = '100px';
+        pixel.style.widtht = '100px';
+    })
 };
+
