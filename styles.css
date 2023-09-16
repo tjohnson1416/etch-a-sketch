@@ -6,8 +6,8 @@ body {
 .grid-container {
     display: flex;
     flex-direction: column;
-    width: 1000px;
-    height: 1000px;
+    width: 850px;
+    height: 850px;
 }
 
 .grid-row {
