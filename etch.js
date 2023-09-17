@@ -2,8 +2,10 @@
 
 makeGrid();
 
-const button = document.querySelector('#change-grid');
-button.addEventListener('click', changeGrid());
+let button = document.querySelector('#change-grid');
+button.addEventListener('click', x => {
+    changeGrid();
+});
 
 function clearGrid(gridSize) {
     const pixels = document.querySelectorAll('.grid-pixel').forEach((pixel => {
@@ -42,7 +44,10 @@ function makeGrid(gridSize = 16) {
         pixel.style.width = (800/gridSize) + 'px';
         pixel.style.border = 'solid grey 1px'
         pixel.addEventListener('mouseover', (x) => {
-            pixel.style.backgroundColor = 'black';
+            let red = (Math.random() * 255);
+            let green = (Math.random() * 255);
+            let blue = (Math.random() * 255);
+            pixel.style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
         })
     })
 };
